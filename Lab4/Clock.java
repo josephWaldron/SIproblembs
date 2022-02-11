@@ -40,18 +40,26 @@ public class Clock {
     //methods
     public void incrementHours(){
         this.hr += 1;
+        if(hr > 23){
+            hr = 0;
+        }
     }
     public void incrementMinutes(){
         this.min += 1;
+        if(min > 59){
+            min = 0;
+            incrementHours();
+        }
     }
     public void incrementSeconds(){
         this.sec += 1;
+        if(sec > 59){
+            sec = 0;
+            incrementMinutes();
+        }
     }
     public boolean equals(Clock otherClock){
-        if(this.sec == otherClock.sec && this.min == otherClock.min && this.hr == otherClock.hr){
-            return true;
-        }
-        else return false;
+        return(this.sec == otherClock.sec && this.min == otherClock.min && this.hr == otherClock.hr);
     }
     public void makeCopy(Clock otherClock){
         this.hr = otherClock.hr;
