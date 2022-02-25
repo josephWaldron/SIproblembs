@@ -1,5 +1,4 @@
 package Lab4;
-
 public class RetailItem {
     String description; 
     int unitsOnHand;
@@ -20,5 +19,12 @@ public class RetailItem {
 
     public boolean isExpensive(){
         return(price > 100);
+    }
+    public static boolean isCheap(int value){
+        return value < 30;
+    }
+    @Override
+    public String toString() {
+        return "Item: " + description + "\ncost: " + price + "\nIs expensive?: "; 
     }
 }
