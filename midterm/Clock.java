@@ -1,4 +1,4 @@
-package Lab4;
+package midterm;
 
 public class Clock {
     private int hr; //data fields
@@ -59,9 +59,7 @@ public class Clock {
         this.min = otherClock.min;
         this.sec = otherClock.sec;
     }
-    static String whatSound(){
-        return "Clocks tick";
-    }
+    
     public Clock getCopy(){
         return new Clock(this.hr, this.min, this.sec);
     }

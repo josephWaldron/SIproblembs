@@ -25,6 +25,6 @@ public class RetailItem {
     }
     @Override
     public String toString() {
-        return "Item: " + description + "\ncost: " + price + "\nIs expensive?: "; 
+        return "Item: " + description + "\ncost: " + price + "\nIs expensive?: ";
     }
 }
