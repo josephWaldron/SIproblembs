@@ -23,8 +23,8 @@ public class RetailItem {
     public static boolean isCheap(int value){
         return value < 30;
     }
-    @Override
-    public String toString() {
-        return "Item: " + description + "\ncost: " + price + "\nIs expensive?: ";
-    }
+    // @Override
+    // public String toString() {
+    //     return "Item: " + description + "\ncost: " + price + "\nIs expensive?: ";
+    // }
 }
